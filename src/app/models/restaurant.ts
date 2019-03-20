@@ -15,16 +15,28 @@ export class  Restaurant {
   avgMealPrice: number;
   reviews: Review[];
   location: Address;
+
   // endregion
 
 // region Default Methods
 
   constructor(args?) {
-    this.name = args.name;
-    this.website = args.website;
-    this.phone = args.phone;
-    this.rating = args.rating;
-    this.avgMealPrice = args.avgMealPrice;
+    if(args) {
+
+      if(args.name)
+        this.name = args.name;
+      if(args.website)
+        this.website = args.website;
+      if(args.phone)
+        this.phone = args.phone;
+      if(args.rating)
+        this.rating = args.rating;
+      if(args.avgMealPrice)
+        this.avgMealPrice = args.avgMealPrice;
+      if(args.location)
+        this.location = args.location;
+
+    }
   }
 // endregion
 

@@ -15,6 +15,7 @@ export class RestaurantsComponent implements OnInit {
  }
   getRestaurants(): void {
       this.restaurantService.getRestaurants().subscribe( restaurants => this.rests = restaurants);
+
   }
 
 }

@@ -10,6 +10,7 @@ export class RestCardComponent implements OnInit  {
   @Input() restaurant: Restaurant;
   // now = new Date();
   constructor() {
+
     // this.restaurant = new Restaurant();
 
   }
