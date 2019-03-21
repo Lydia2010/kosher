@@ -9,8 +9,8 @@
       <!--Now: {{now | date}}-->
     </mat-card-subtitle>
   </mat-card-header>
-
   <mat-card-content>
+
     <p>
     rated: {{restaurant.rating}} Price Range: {{restaurant.avgMealPrice}}
     </p>
@@ -19,6 +19,16 @@
       {{restaurant.location.city }} {{restaurant.location.province }} {{restaurant.location.country}}<br>
       {{restaurant.location.postalCode}}
     </p>
+    <div *ngIf="restaurant.reviews">
+      reviews:
+
+      <ul>
+       <li *ngFor="let review of restaurant.reviews">
+       author: {{review.author}}, rating:{{ review.rating}}, comments: {{ review.title}}:{{ review.body}}, date {{ review.date}}
+
+      </li>
+    </ul>
+    </div>
 
   </mat-card-content>
 

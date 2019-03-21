@@ -22,7 +22,6 @@ export class  Restaurant {
 
   constructor(args?) {
     if(args) {
-
       if(args.name)
         this.name = args.name;
       if(args.website)
@@ -35,7 +34,8 @@ export class  Restaurant {
         this.avgMealPrice = args.avgMealPrice;
       if(args.location)
         this.location = args.location;
-
+      if(args.reviews)
+        this.reviews = args.reviews;
     }
   }
 // endregion

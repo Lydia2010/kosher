@@ -7,6 +7,7 @@ export class Review {
   date: Date;
   // endregion
 
+
   constructor(args?) {
     if(args) {
       if(args.author)
@@ -19,6 +20,7 @@ export class Review {
         this.body = args.body;
       if(args.date)
         this.date = args.date;
+      console.log(args.body);
     }
   }
 

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {Restaurant} from '../restaurant';
 import {Observable, of} from 'rxjs';
 import {Address} from "../address";
-//import {Review} from "../review";
+import {Review} from "../review";
 
 
 @Injectable({
@@ -72,8 +72,8 @@ export class RestaurantService {
         phone: '(514)-222-6666',
         rating: 1,
         avgMealPrice: 15,
-        /*reviews: [new Review( {author: 1, rating: 5, title: "My opinion", body: "Very nice", date: '2019-01-03'}),
-                  new Review( {author: 2, rating: 4, title: "My opinion", body: "Cheep and tasty", date: '2019-02-04'})]*/
+        reviews: [new Review( {author: 1, rating: 5, title: "My opinion", body: "Very nice", date: '2019-01-03'}),
+                  new Review( {author: 2, rating: 4, title: "My opinion", body: "Cheep and tasty", date: '2019-02-04'})]
       }),
 
     ];

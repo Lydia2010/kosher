@@ -11,9 +11,7 @@ export class Address {
 
 
   constructor(args?) {
-    console.log(234)
     if(args) {
-
       if(args.streetNumber)
         this.streetNumber = args.name;
       if(args.streetName)
