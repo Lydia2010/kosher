@@ -9,18 +9,19 @@ export class Review {
 
 
   constructor(args?) {
-    if(args) {
-      if(args.author)
+    if (args) {
+      if (args.author) {
         this.author = args.author;
-      if(args.rating)
-        this.rating = args.rating;
-      if(args.title)
+      }
+      if (args.rating) {
+        this.rating = args.rating;}
+      if (args.title)
         this.title = args.title;
-      if(args.body)
+      if (args.body)
         this.body = args.body;
-      if(args.date)
+      if (args.date)
         this.date = args.date;
-      console.log(args.body);
+
     }
   }
 

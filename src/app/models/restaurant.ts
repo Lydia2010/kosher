@@ -21,20 +21,13 @@ export class  Restaurant {
 // region Default Methods
 
   constructor(args?) {
-    if(args) {
-      if(args.name)
+    if (args) {
         this.name = args.name;
-      if(args.website)
         this.website = args.website;
-      if(args.phone)
         this.phone = args.phone;
-      if(args.rating)
         this.rating = args.rating;
-      if(args.avgMealPrice)
         this.avgMealPrice = args.avgMealPrice;
-      if(args.location)
         this.location = args.location;
-      if(args.reviews)
         this.reviews = args.reviews;
     }
   }
